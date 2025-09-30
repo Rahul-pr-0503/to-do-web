@@ -29,6 +29,5 @@ This app lets users create tasks, organize them into **Personal** and **Work** l
 
 ## 📷 Screenshot
 
-```bash
-![To-Do App UI](todo.jpg)
-```
+![To-Do App UI](togo.jpg)
+
