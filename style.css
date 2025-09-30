@@ -1,0 +1,175 @@
+/* Background with gradient */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  margin: 0;
+  padding: 40px;
+  color: #333;
+}
+
+/* Glass container */
+.container {
+  max-width: 850px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  color: #fff;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+/* Inputs and selectors */
+.email-input,
+.task-input {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.email-input input,
+.task-input select,
+.task-input input[type="text"],
+.task-input input[type="datetime-local"] {
+  padding: 10px;
+  border: none;
+  border-radius: 12px;
+  outline: none;
+  flex: 1;
+  background: rgba(255, 255, 255, 0.8);
+  font-size: 0.95rem;
+}
+
+.task-input select {
+  flex: 0.6;
+}
+
+/* Add button */
+.task-input button {
+  padding: 10px 16px;
+  background: linear-gradient(135deg, #ff9966, #ff5e62);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.task-input button:hover {
+  background: linear-gradient(135deg, #ff5e62, #ff9966);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+/* List sections */
+.list-section {
+  margin-top: 25px;
+}
+
+h2 {
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+  border-left: 6px solid;
+  padding-left: 10px;
+}
+
+/* Color code headings */
+.list-section:nth-of-type(1) h2 {
+  border-color: #ff6f61;
+}
+.list-section:nth-of-type(2) h2 {
+  border-color: #4dd0e1;
+}
+
+/* Tasks */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255,255,255,0.2);
+  margin-bottom: 12px;
+  padding: 12px 15px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease;
+}
+
+li:hover {
+  transform: scale(1.02);
+}
+
+li.completed span {
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+.task-details {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-left: 10px;
+  color: #fff;
+}
+
+.task-date {
+  font-size: 0.8em;
+  color: #f0f0f0;
+}
+
+/* Action buttons */
+.actions button {
+  margin-left: 6px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.actions .delete {
+  background: #ff4d4d;
+  color: #fff;
+}
+.actions .delete:hover {
+  background: #e60000;
+}
+
+.actions .edit {
+  background: #ffd633;
+  color: #000;
+}
+.actions .edit:hover {
+  background: #ffbf00;
+}
+
+.actions .save {
+  background: #28a745;
+  color: #fff;
+}
+.actions .save:hover {
+  background: #218838;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(10px);}
+  to {opacity: 1; transform: translateY(0);}
+}
