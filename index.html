@@ -1,45 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>To-Do App</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-  <script>
-    (function(){
-      emailjs.init("6L_pILMkMGyYv1aw1"); 
-    })();
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("6L_pILMkMGyYv1aw1");
+        })();
+    </script>
 </head>
+
 <body>
-  <div class="container">
-    <h1>To-Do Task</h1>
+    <div class="container">
+        <h1>To-Do Task</h1>
 
-    <div class="email-input">
-      <input type="email" id="userEmail" placeholder="Enter your email">
-    </div>
+        <div class="email-input">
+            <input type="email" id="userEmail" placeholder="Enter your email">
+        </div>
 
-    <div class="task-input">
-      <select id="taskListSelect">
-        <option value="personal">Personal</option>
-        <option value="work">Work</option>
-      </select>
-      <input type="text" id="taskText" placeholder="Enter a task">
-      <input type="datetime-local" id="taskDate">
-      <button onclick="addTask()">Add</button>
-    </div>
+        <div class="task-input">
+            <select id="taskListSelect">
+                <option value="personal">Personal</option>
+                <option value="work">Work</option>
+            </select>
+            <input type="text" id="taskText" placeholder="Enter a task">
+            <input type="datetime-local" id="taskDate">
+            <button onclick="addTask()">Add</button>
+        </div>
 
-    <div class="list-section">
-      <h2>Personal</h2>
-      <ul id="personalList"></ul>
-    </div>
+        <div class="list-section">
+            <h2>Personal</h2>
+            <ul id="personalList"></ul>
+        </div>
 
-    <div class="list-section">
-      <h2>Work</h2>
-      <ul id="workList"></ul>
+        <div class="list-section">
+            <h2>Work</h2>
+            <ul id="workList"></ul>
+        </div>
     </div>
-  </div>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
