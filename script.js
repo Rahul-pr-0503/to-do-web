@@ -1,8 +1,6 @@
 let currentUser = null;
 let tasks = [];
 
-// -------- AUTH FUNCTIONS --------
-
 // Switch between signup and login forms
 function showSignup() {
   document.getElementById("signupForm").style.display = "block";
